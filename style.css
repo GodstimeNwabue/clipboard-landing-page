@@ -139,7 +139,6 @@ main h2 {
 .contact_details {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 4rem;
     padding-top: 2rem;
     flex-wrap: wrap;
@@ -152,10 +151,19 @@ main h2 {
 
 ul {
     font-size: 18px;
+    line-height: 3rem;
+}
+
+.contact_details ul, .contact_details_media {
+    padding-top: 20px;
 }
 
 .contact_details ul span {
     line-height: 2rem;
+}
+
+.contact_details_media {
+    margin: auto 0 auto 0;
 }
 
 .contact_details_media img{
@@ -208,7 +216,7 @@ footer {
    }
 
    button {
-    width: 60%;
+    width: 100%;
    }
 
    .track {
@@ -257,6 +265,7 @@ footer {
 
    .brands_tools_company img {
     padding-top: 3.5rem;
+    width: -webkit-fill-available;
    }
 
    footer {
@@ -267,6 +276,17 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+   }
+
+   .contact_details_mb-view {
+       height: 50%;
+       width: 30%;
+       margin: auto;
+   }
+
+   .contact_details ul,
+   .contact_details_media {
+    padding-top: 7px;
    }
 }
 
@@ -282,7 +302,7 @@ footer {
 
     .contact_details {
         line-height: 2.0;
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .contact_details ul {
@@ -299,6 +319,20 @@ footer {
 @media screen and (max-width: 1000px) and (min-width: 427px) {
     .brands_tools_company img {
         padding: 1.3rem 1.5rem;
+    }
+}
+
+@media (max-width: 710px) {
+    footer, .hero, .workflow, .track, .history_download {
+        padding: 0px 1rem;
+    }
+
+    p {
+        font-size: initial;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
