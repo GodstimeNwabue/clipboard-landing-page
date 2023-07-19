@@ -63,16 +63,17 @@ main h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* gap: 5.5rem; */
+    gap: 4.0rem;
     flex-wrap: wrap;
 }
 
 .tv_left {
     width: 50%;
+    transform: translateX(-3vw);
 }
 
 .tv_left img {
-    width: 80%;
+    width: 100%;
 }
 
 .text_right {
@@ -236,13 +237,14 @@ footer {
    }
 
    .tv_left {
-    width: 80%;
+    width: 90%;
+    transform: translateX(0vw);
    }
 
    .text_right {
     text-align: center;
    }
-
+   
    .brands_tools_icons {
     flex-direction: column;
     margin-top: 2rem;
