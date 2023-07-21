@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Bai Jamjuree', sans-serif, monospace;
+}
+
 p {
     font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
 }
 
 h2 {
     font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0.6;
 }
 
 
@@ -33,6 +41,7 @@ header {
 .history_download h1 {
     margin-top: -1.6rem;
     font-size: 2.4rem;
+    opacity: 0.7;
 }
 
 .history_download p {
@@ -98,7 +107,7 @@ main h2 {
 }
 
 .brands p {
-    padding-top: 1.5rem;
+    padding-top: 1.0rem;
 }
 
 .brands_tools_icons {
@@ -145,9 +154,19 @@ main h2 {
     flex-wrap: wrap;
 }
 
+.contact_details > div {
+    align-self: center;
+}
+
 .contact_details ul {
     list-style: none;
     cursor: pointer;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.contact_details ul li:hover {
+    color: rgb(38, 186, 164);
 }
 
 ul {
@@ -155,9 +174,9 @@ ul {
     line-height: 3rem;
 }
 
-.contact_details ul, .contact_details_media {
+/* .contact_details ul, .contact_details_media {
     padding-top: 20px;
-}
+} */
 
 .contact_details ul span {
     line-height: 2rem;
@@ -165,11 +184,25 @@ ul {
 
 .contact_details_media {
     margin: auto 0 auto 0;
+    display: flex;
+    gap: 1.0rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact_details_media img{
-    padding-left: 0.5rem;
+.contact_details_media svg path:hover {
+    fill: rgb(38, 186, 164);
+    cursor: pointer;
 }
+
+/* svg path {
+    cursor: pointer;
+    fill: blue;
+}
+svg:hover {
+    fill: blue;
+    cursor: pointer;
+} */
 
 .button_download {
     display: flex;
@@ -182,20 +215,25 @@ button {
     gap: 20px;
     background-color: hsl(171, 66%, 44%);
     padding: 1.1rem 2.1rem;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bolder;
+    font-size: 18px;
     border: none;
     box-shadow: 4px 3px 7px hsl(171, 66%, 44%);
     cursor: pointer;
+    color: white;
+    opacity: 0.8;
 }
 
 .button_download .mac_download {
     background-color: hsl(233, 100%, 69%);
-    box-shadow: 4px 3px 7px hsl(233, 100%, 69%);
+    box-shadow: 0px 3px 7px hsl(233, 100%, 69%);
+    opacity: 0.8;
 }
 
 footer {
-    background-color: hsl(201, 11%, 66%);
+    background-color: rgb(243, 241, 239)
+    ;
     padding-bottom: 1.5rem;
 }
 
